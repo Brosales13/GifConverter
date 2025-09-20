@@ -23,18 +23,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9ACF7ACC2E7E5EA80013529A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		762769752E71F139009E67AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.5.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		762BB8182E60E47E00E27865 /* GifConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		762BB8262E60E48000E27865 /* GifConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		762BB8302E60E48000E27865 /* GifConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ACF6FE62E7E34450013529A /* CreateAnimeBuddy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CreateAnimeBuddy; sourceTree = "<group>"; };
+		9ACF7ACE2E7E5EA80013529A /* CreateAnimeBuddy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CreateAnimeBuddy; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		762BB81A2E60E47E00E27865 /* GifConverter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = GifConverter;
+			sourceTree = "<group>";
+		};
+		9ACF7ACF2E7E5EA80013529A /* CreateAnimeBuddy */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CreateAnimeBuddy;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -61,6 +78,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9ACF7ACB2E7E5EA80013529A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				762BB81A2E60E47E00E27865 /* GifConverter */,
-				9ACF6FE62E7E34450013529A /* CreateAnimeBuddy */,
+				9ACF7ACF2E7E5EA80013529A /* CreateAnimeBuddy */,
 				762769742E71F139009E67AA /* Frameworks */,
 				762BB8192E60E47E00E27865 /* Products */,
 			);
@@ -88,6 +112,7 @@
 				762BB8182E60E47E00E27865 /* GifConverter.app */,
 				762BB8262E60E48000E27865 /* GifConverterTests.xctest */,
 				762BB8302E60E48000E27865 /* GifConverterUITests.xctest */,
+				9ACF7ACE2E7E5EA80013529A /* CreateAnimeBuddy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +182,28 @@
 			productReference = 762BB8302E60E48000E27865 /* GifConverterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9ACF7ACD2E7E5EA80013529A /* CreateAnimeBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACF7AD22E7E5EA80013529A /* Build configuration list for PBXNativeTarget "CreateAnimeBuddy" */;
+			buildPhases = (
+				9ACF7ACA2E7E5EA80013529A /* Sources */,
+				9ACF7ACB2E7E5EA80013529A /* Frameworks */,
+				9ACF7ACC2E7E5EA80013529A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9ACF7ACF2E7E5EA80013529A /* CreateAnimeBuddy */,
+			);
+			name = CreateAnimeBuddy;
+			packageProductDependencies = (
+			);
+			productName = CreateAnimeBuddy;
+			productReference = 9ACF7ACE2E7E5EA80013529A /* CreateAnimeBuddy */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,7 +211,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1640;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					762BB8172E60E47E00E27865 = {
@@ -177,6 +224,9 @@
 					762BB82F2E60E48000E27865 = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 762BB8172E60E47E00E27865;
+					};
+					9ACF7ACD2E7E5EA80013529A = {
+						CreatedOnToolsVersion = 26.0;
 					};
 				};
 			};
@@ -197,6 +247,7 @@
 				762BB8172E60E47E00E27865 /* GifConverter */,
 				762BB8252E60E48000E27865 /* GifConverterTests */,
 				762BB82F2E60E48000E27865 /* GifConverterUITests */,
+				9ACF7ACD2E7E5EA80013529A /* CreateAnimeBuddy */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +292,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		762BB82C2E60E48000E27865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACF7ACA2E7E5EA80013529A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,6 +577,34 @@
 			};
 			name = Release;
 		};
+		9ACF7AD32E7E5EA80013529A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8B64X8G656;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9ACF7AD42E7E5EA80013529A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8B64X8G656;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,6 +640,15 @@
 			buildConfigurations = (
 				762BB8412E60E48000E27865 /* Debug */,
 				762BB8422E60E48000E27865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACF7AD22E7E5EA80013529A /* Build configuration list for PBXNativeTarget "CreateAnimeBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACF7AD32E7E5EA80013529A /* Debug */,
+				9ACF7AD42E7E5EA80013529A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
