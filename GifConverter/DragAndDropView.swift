@@ -39,19 +39,19 @@ struct DragAndDropView: View {
             .listStyle(.sidebar)
             
         } detail: {
-//            if showLoadingSpinner {
-//                VStack(spacing: 34) {
-//                    Text("Generating GIF...")
-//                        .font(.title)
-//                    ProgressView()
-//                        .progressViewStyle(CircularProgressViewStyle())
-//                        .scaleEffect(2.0, anchor: .center)
-//                }
-//            } else {
-//                dragAndDrop
-//            }
+            if showLoadingSpinner {
+                VStack(spacing: 34) {
+                    Text("Generating GIF...")
+                        .font(.title)
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .scaleEffect(2.0, anchor: .center)
+                }
+            } else {
+                dragAndDrop
+            }
             
-            displayGifs
+//            displayGifs
         }
         .toolbar {
             VStack(alignment: .trailing) {
