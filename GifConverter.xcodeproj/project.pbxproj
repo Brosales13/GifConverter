@@ -48,6 +48,9 @@
 		762BB8262E60E48000E27865 /* GifConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		762BB8302E60E48000E27865 /* GifConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACF7ACE2E7E5EA80013529A /* CreateAnimeBuddy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CreateAnimeBuddy; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ACFAA032E876D7A00474A88 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CryptoSwift.xcodeproj; sourceTree = "<group>"; };
+		9ACFAADB2E876D7A00474A88 /* Atomics.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Atomics.xcodeproj; sourceTree = "<group>"; };
+		9ACFAD002E876D7A00474A88 /* Collections.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Collections.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -124,6 +127,27 @@
 				762BB8262E60E48000E27865 /* GifConverterTests.xctest */,
 				762BB8302E60E48000E27865 /* GifConverterUITests.xctest */,
 				9ACF7ACE2E7E5EA80013529A /* CreateAnimeBuddy */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ACFB09D2E876D7A00474A88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ACFB09F2E876D7A00474A88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ACFB0A12E876D7A00474A88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -261,6 +285,20 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 762BB8192E60E47E00E27865 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9ACFB0A12E876D7A00474A88 /* Products */;
+					ProjectRef = 9ACFAADB2E876D7A00474A88 /* Atomics.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ACFB09D2E876D7A00474A88 /* Products */;
+					ProjectRef = 9ACFAD002E876D7A00474A88 /* Collections.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ACFB09F2E876D7A00474A88 /* Products */;
+					ProjectRef = 9ACFAA032E876D7A00474A88 /* CryptoSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				762BB8172E60E47E00E27865 /* GifConverter */,
@@ -602,6 +640,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8B64X8G656;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CreateAnimeBuddy/.build/arm64-apple-macosx/debug",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -616,6 +658,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8B64X8G656;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CreateAnimeBuddy/.build/arm64-apple-macosx/debug",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
