@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9ACF7ADF2E7E612C0013529A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9ACF7ADE2E7E612C0013529A /* FirebaseAuth */; };
 		9ACF7AE12E7E612C0013529A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9ACF7AE02E7E612C0013529A /* FirebaseFirestore */; };
+		9ACF9A402E876C6000474A88 /* OAuth1 in Frameworks */ = {isa = PBXBuildFile; productRef = 9ACF9A3F2E876C6000474A88 /* OAuth1 */; };
+		9ACF9A422E876C6000474A88 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = 9ACF9A412E876C6000474A88 /* OAuth2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ACF7ADF2E7E612C0013529A /* FirebaseAuth in Frameworks */,
+				9ACF9A422E876C6000474A88 /* OAuth2 in Frameworks */,
+				9ACF9A402E876C6000474A88 /* OAuth1 in Frameworks */,
 				9ACF7AE12E7E612C0013529A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +212,8 @@
 			packageProductDependencies = (
 				9ACF7ADE2E7E612C0013529A /* FirebaseAuth */,
 				9ACF7AE02E7E612C0013529A /* FirebaseFirestore */,
+				9ACF9A3F2E876C6000474A88 /* OAuth1 */,
+				9ACF9A412E876C6000474A88 /* OAuth2 */,
 			);
 			productName = CreateAnimeBuddy;
 			productReference = 9ACF7ACE2E7E5EA80013529A /* CreateAnimeBuddy */;
@@ -250,6 +256,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9ACF7ADD2E7E612C0013529A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9ACF9A3E2E876C6000474A88 /* XCRemoteSwiftPackageReference "google-auth-library-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 762BB8192E60E47E00E27865 /* Products */;
@@ -676,6 +683,14 @@
 				minimumVersion = 12.3.0;
 			};
 		};
+		9ACF9A3E2E876C6000474A88 /* XCRemoteSwiftPackageReference "google-auth-library-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleapis/google-auth-library-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -688,6 +703,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9ACF7ADD2E7E612C0013529A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		9ACF9A3F2E876C6000474A88 /* OAuth1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ACF9A3E2E876C6000474A88 /* XCRemoteSwiftPackageReference "google-auth-library-swift" */;
+			productName = OAuth1;
+		};
+		9ACF9A412E876C6000474A88 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9ACF9A3E2E876C6000474A88 /* XCRemoteSwiftPackageReference "google-auth-library-swift" */;
+			productName = OAuth2;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
